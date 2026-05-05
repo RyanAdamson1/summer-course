@@ -1,7 +1,7 @@
 # Tech Cohort Capstone Repositories
 
 ## Tech Cohort 6 (2025 - 2026)
-1. [VLMs for Battle Damage Assessment]()
+1. [VLMs for Battle Damage Assessment](https://github.com/cmu-bda/bda-svc)
 2. [Immersive Modeling and Simulation for Autonomy]()
 3. [Standardized 3d Map Generation and Integration]()
 4. [Aegis Scholar](https://github.com/shafe123/cmu-aegis-scholar)
