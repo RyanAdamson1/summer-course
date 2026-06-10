@@ -12,6 +12,7 @@ import copy
 import os
 import pytest
 from conftest import load_student_module, assert_has_function
+from random import randint
 
 
 # ---------------------------------------------------------------------------
@@ -33,3 +34,24 @@ STUDENT_FILE = (
 def student():
     return load_student_module(STUDENT_FILE, "student_ps5")
 
+class TestRecursiveSquares:
+    """Tests for problem 1"""
+
+    def test_recursive_squares_exists(self, student):
+        assert_has_function(student, 'recursive_squares')
+
+    def test_squares_empty_list(self, student):
+        assert student.recursive_squares(0) == [], "When n = 0, the list should be empty"
+
+    def test_squares_single(self, student):
+        assert student.recursive_squares(1) == [1], "When n = 1, the list should be [1]"
+
+    def test_squares_example(self, student):
+        assert student.recursive_squares(5) == [1, 4, 9, 16, 25], "Failed the example of n=5"
+
+    def test_squares_random(self, student):
+        for i in range(5):
+            n = randint(5, 15)
+            ans = student.recursive_squares(n)
+            assert len(ans) == n, f"Given n={n}, there should be {n} elements"
+            assert ans[-1] == n ** 2, f"The last element for n={n} should be {n ** 2}"

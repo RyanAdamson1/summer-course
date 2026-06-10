@@ -25,9 +25,29 @@ As stated above, you should create a new branch and checkout that branch for thi
 
 ## Problem 1 — Basic Recursion
 
+**Your task:**
+- **Create a squares list using recursion**
+  - Given an integer `n`, return a list of squares from `1..n` using recursion
+  - Name your function `recursive_squares`
+  - For example, if `n=5` then the function returns `[1, 4, 9, 16, 25]`
+  - You only need to create the list using recursion, not the squares
+
+- **Palindrome checker**
+  - Given a string, check if it is a palindrome using recursion.  That is, is the string the same forwards and backwards.
+  - Name your function `palindrome_checker`
+  - For example, the input string `bacon` would return `False` while the string `radar` would return `True`.
+
+- **List length**
+  - Given a list, determine the length of the list using recursion
+  - Name your function `length`
+  - For example, the input list `[1, 2, 3]` would return `3`
 
 ### Challenge
 
+- **Flatten**
+  - Given a list, flatten the list into a single list using recursion.
+  - Name your function `flatten`
+  - For example, given `[1, [2, 3], [4], 5]` return `[1, 2, 3, 4, 5]`
 
 ---
 
