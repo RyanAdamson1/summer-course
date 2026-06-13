@@ -11,12 +11,13 @@ def recursive_squares(num: int) -> list[int]:
 
     # recursive step
     childs_list = recursive_squares(num - 1)
-    
+
     # add our number to child's
-    square = num ** 2
+    square = num**2
     childs_list.append(square)
 
     return childs_list
+
 
 def palindrome_checker(value: str) -> bool:
     value = value.lower()
@@ -34,11 +35,12 @@ def palindrome_checker(value: str) -> bool:
     result = palindrome_checker(value[1:-1])
     return result
 
+
 def length(input_list: list) -> int:
     # base case
     if input_list == []:
         return 0
-    
+
     # recursive step
     child_depth = length(input_list[1:])
 
@@ -56,7 +58,7 @@ def flatten(input_list: list) -> list:
         first_element = flatten(input_list[0])
     else:
         first_element = [input_list[0]]
-    
+
     # recurse remaining elements
     remaining_elements = flatten(input_list[1:])
 
