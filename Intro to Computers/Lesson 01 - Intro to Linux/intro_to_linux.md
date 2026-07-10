@@ -33,10 +33,10 @@ Welcome! These exercises are designed to help you get comfortable with basic Lin
 
 1. List all files and directories in the current folder.
    
-
+### Answer: docs		file1.txt	file2.txt	notes		scripts
 2. Change directory into `notes`, then list the files.
    
-
+### notes 1 and 2
 3. Go back to the parent directory.
    
 
