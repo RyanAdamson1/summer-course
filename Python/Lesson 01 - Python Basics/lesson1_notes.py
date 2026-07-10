@@ -1,4 +1,3 @@
-clear = input 
 name = input ("what is your name ")
 print (f"Hello {name}")
 fav_number = int(input ("what is your Favorite Number "))
